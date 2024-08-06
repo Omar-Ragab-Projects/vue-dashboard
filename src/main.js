@@ -10,7 +10,6 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import "./icons";
 import PageViewHead from "@/components/global/PageViewHead.vue";
 import CanvasJSChart from "@canvasjs/vue-charts";
-
 const app = createApp(App);
 
 app.use(router);

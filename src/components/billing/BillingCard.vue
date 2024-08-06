@@ -358,4 +358,10 @@ const invoices = ref({
     }
   }
 }
+.app[dir="rtl"] {
+  .billing-card .cards .payment-method > button {
+    right: auto;
+    left: 15px;
+  }
+}
 </style>

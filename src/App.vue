@@ -1,5 +1,5 @@
 <template>
-  <div class="app">
+  <div class="app" :dir="direction" :lang="language">
     <transition name="slide-fade">
       <div class="header" v-if="navVisible">
         <div class="logo">Vue Dashboard</div>
@@ -16,8 +16,10 @@
           <RouterLink to="/billing"
             ><font-awesome-icon icon="fa-solid fa-receipt" />Billing</RouterLink
           >
-          <RouterLink to="/rtl"
-            ><font-awesome-icon icon="fa-solid fa-right-left" />Rtl</RouterLink
+          <RouterLink to="/" @click="rtlFun"
+            ><font-awesome-icon icon="fa-solid fa-right-left" />{{
+              currentLanguage
+            }}</RouterLink
           >
           <RouterLink to="/notifications"
             ><font-awesome-icon
@@ -56,6 +58,21 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import { navVisible } from "./sharedState";
+import { ref } from "vue";
+
+const direction = ref("ltr");
+const language = ref("en");
+const currentLanguage = ref("Arabic");
+function rtlFun() {
+  direction.value == "ltr"
+    ? (direction.value = "rtl")
+    : (direction.value = "ltr");
+  language.value == "en" ? (language.value = "ar") : (language.value = "en");
+  currentLanguage.value == "Arabic"
+    ? (currentLanguage.value = "English")
+    : (currentLanguage.value = "Arabic");
+}
+
 function active(e) {
   console.log(e.target);
 }
@@ -107,14 +124,14 @@ function active(e) {
         padding: 15px 20px;
         border-radius: 10px;
         transition: 0.1s;
-        &.router-link-exact-active,
-        &.router-link-active {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &.router-link-exact-active:not(:nth-child(4)) {
           background-color: var(--main-color) !important;
           color: white;
         }
-        svg {
-          margin-right: 10px;
-        }
+
         &:hover {
           background-color: rgba(255, 255, 255, 0.1);
         }

@@ -184,11 +184,11 @@ const oldTransactions = ref({
           font-size: 14px;
         }
       }
-      > div.info {
+      div.info {
         color: var(--gray-color);
         font-size: 14px;
         margin-bottom: 2px;
-        span {
+        > span {
           font-weight: bold;
           color: var(--text-main-color);
           font-size: 13px;
@@ -304,6 +304,22 @@ const oldTransactions = ref({
         }
       }
     }
+  }
+}
+.app[dir="rtl"] {
+  .billing-info .billing-transaction > div.date-range,
+  .billing-info .billing-information .info-box .settings {
+    right: auto;
+    left: 15px;
+    span {
+      margin-right: 6px;
+      margin-left: 0;
+    }
+  }
+  .billing-info .billing-transaction .newest .transaction div.price,
+  .billing-info .billing-transaction .yesterday .transaction div.price {
+    margin-right: auto;
+    margin-left: 10px;
   }
 }
 </style>

@@ -217,4 +217,18 @@ const orders = ref({
     }
   }
 }
+.app[dir="rtl"] {
+  .projects {
+    .menu {
+      right: auto;
+      left: 40px !important;
+    }
+  }
+  .all-orders {
+    &::after {
+      left: auto;
+      right: 12px;
+    }
+  }
+}
 </style>

@@ -410,4 +410,13 @@ const projects = ref({
   height: 10px;
   width: 100%;
 }
+.app[dir="rtl"] {
+  .table-one,
+  .table-two {
+    h3 {
+      left: auto;
+      right: 20px;
+    }
+  }
+}
 </style>

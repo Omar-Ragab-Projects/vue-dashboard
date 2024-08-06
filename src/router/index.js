@@ -18,11 +18,7 @@ const router = createRouter({
       name: "Billing",
       component: () => import("../views/BillingView.vue"),
     },
-    {
-      path: "/rtl",
-      name: "Rtl",
-      component: () => import("../views/RtlView.vue"),
-    },
+
     {
       path: "/notifications",
       name: "Notifications",
