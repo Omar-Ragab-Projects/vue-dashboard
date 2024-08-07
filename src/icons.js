@@ -38,6 +38,7 @@ const icons = {
   faCalendarDays: solidIcon.faCalendarDays,
   faArrowDown: solidIcon.faArrowDown,
   faExclamation: solidIcon.faExclamation,
+  faCircleExclamation: solidIcon.faCircleExclamation,
 };
 
 library.add(icons);

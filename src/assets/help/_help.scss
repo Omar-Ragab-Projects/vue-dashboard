@@ -1,16 +1,11 @@
-@import "./base.css";
-@import "./transition.css";
 .card-header-style {
   font-size: 20px;
   font-weight: bold;
   color: var(--text-main-color);
-}
-@media (max-width: 767px) {
-  .card-header-style {
+  @media (max-width: 767px) {
     font-size: 18px;
   }
 }
-
 .card-background-style {
   box-shadow: 0 5px 10px #ddd;
   padding: 20px;

@@ -84,7 +84,7 @@ function notifications() {
     .title {
       font-weight: bold;
       color: var(--text-main-color);
-      opacity: 0.7;
+      opacity: 1;
     }
   }
   .setting {

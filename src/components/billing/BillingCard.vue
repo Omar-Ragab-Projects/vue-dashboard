@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="payment-method">
-        <h4>Payment Method</h4>
+        <h4 class="card-header-style">Payment Method</h4>
         <button>
           <span><font-awesome-icon icon="fa-solid fa-plus" /></span> ADD NEW
           CARD
@@ -240,7 +240,6 @@ const invoices = ref({
       margin-top: 20px;
       border-radius: 10px;
       box-shadow: 0 2px 10px #d7d7d7;
-
       h4 {
         font-size: 18px;
         font-weight: bold;
