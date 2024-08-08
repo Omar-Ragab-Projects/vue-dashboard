@@ -1,6 +1,7 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
 import * as regularIcon from "@fortawesome/free-regular-svg-icons";
 import * as solidIcon from "@fortawesome/free-solid-svg-icons";
+import * as brandsIcon from "@fortawesome/free-brands-svg-icons";
 const icons = {
   faEye: regularIcon.faEye,
   faPenToSquare: regularIcon.faPenToSquare,
@@ -43,6 +44,11 @@ const icons = {
   faInbox: solidIcon.faInbox,
   faScrewdriverWrench: solidIcon.faScrewdriverWrench,
   faUserPen: solidIcon.faUserPen,
+  faChartPie: solidIcon.faChartPie,
+  faFacebook: brandsIcon.faFacebook,
+  faGithub: brandsIcon.faGithub,
+  faGoogle: brandsIcon.faGoogle,
+  faKey: solidIcon.faKey,
 };
 
 library.add(icons);

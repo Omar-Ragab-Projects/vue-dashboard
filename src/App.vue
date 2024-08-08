@@ -1,5 +1,13 @@
 <template>
-  <div class="app" :dir="direction" :lang="language">
+  <div
+    class="app"
+    :dir="direction"
+    :lang="language"
+    :class="[
+      $route.name == 'Signin' ? 'signin-page out-page' : '',
+      $route.name == 'Signup' ? 'signup-page out-page' : '',
+    ]"
+  >
     <transition name="slide-fade">
       <div class="header" v-if="navVisible">
         <div class="logo">Vue Dashboard</div>
@@ -44,7 +52,7 @@
       </div></transition
     >
     <div class="router-view">
-      <PageViewHead />
+      <PageViewHead class="Page-view-head" />
 
       <RouterView />
 
@@ -154,6 +162,31 @@ function active(e) {
     // display: none;
     span {
       font-weight: bold;
+    }
+  }
+}
+.app.out-page {
+  padding: 0;
+  .router-view {
+    padding: 0;
+  }
+  .header,
+  .Page-view-head {
+    display: none;
+  }
+  .footer {
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    width: fit-content;
+    left: 100px;
+    margin: 0;
+    padding: 0;
+    @media (max-width: 767px) {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      padding-left: 40px;
     }
   }
 }

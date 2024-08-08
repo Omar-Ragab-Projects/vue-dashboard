@@ -45,8 +45,8 @@
 
 <script setup>
 import { ref } from "vue";
-import CheckedSwitch from "./helpers/CheckedSwitch.vue";
-import UnCheckedSwitch from "./helpers/UnCheckedSwitch.vue";
+import CheckedSwitch from "./../helpers/CheckedSwitch.vue";
+import UnCheckedSwitch from "./../helpers/UnCheckedSwitch.vue";
 const conversations = ref([
   {
     photo: "./src/imgs/person01.jpg",
