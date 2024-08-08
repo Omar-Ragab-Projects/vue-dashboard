@@ -103,7 +103,7 @@
 import { ref } from "vue";
 const authors = ref({
   authorOne: {
-    authorPhoto: "./src/imgs/person01.jpg",
+    authorPhoto: "https://i.ibb.co/2hDFT9m/person01.jpg",
     authorName: "Ahmed Mohamed",
     authorMail: "ahmed@creative-tim.com",
     authorFunctionName: "Manager",
@@ -114,7 +114,7 @@ const authors = ref({
     authorEmployed: "23/04/18",
   },
   authorTwo: {
-    authorPhoto: "./src/imgs/person02.jpg",
+    authorPhoto: "https://i.ibb.co/94fVJ5L/person02.jpg",
     authorName: "Islam Ibrahim",
     authorMail: "islam@creative-tim.com",
     authorFunctionName: "Programator",
@@ -125,7 +125,7 @@ const authors = ref({
     authorEmployed: "11/01/19",
   },
   authorThree: {
-    authorPhoto: "./src/imgs/person03.jpg",
+    authorPhoto: "https://i.ibb.co/PN0TWLh/person03.jpg",
     authorName: "Zeyad Ghasem",
     authorMail: "zeyad@creative-tim.com",
     authorFunctionName: "Executive",
@@ -136,7 +136,7 @@ const authors = ref({
     authorEmployed: "19/09/17",
   },
   authorFour: {
-    authorPhoto: "./src/imgs/person04.jpg",
+    authorPhoto: "https://i.ibb.co/qj0NmFR/person04.jpg",
     authorName: "Hisham Zaki",
     authorMail: "hisham@creative-tim.com",
     authorFunctionName: "Programator",
@@ -147,7 +147,7 @@ const authors = ref({
     authorEmployed: "24/12/08",
   },
   authorFive: {
-    authorPhoto: "./src/imgs/person05.jpg",
+    authorPhoto: "https://i.ibb.co/W5BM2SQ/person05.jpg",
     authorName: "Amgad Mostafa",
     authorMail: "amgad@creative-tim.com",
     authorFunctionName: "Manager",
@@ -158,7 +158,7 @@ const authors = ref({
     authorEmployed: "04/10/21",
   },
   authorSix: {
-    authorPhoto: "./src/imgs/person02.jpg",
+    authorPhoto: "https://i.ibb.co/94fVJ5L/person02.jpg",
     authorName: "Omar Ragab",
     authorMail: "omar@creative-tim.com",
     authorFunctionName: "Programator",

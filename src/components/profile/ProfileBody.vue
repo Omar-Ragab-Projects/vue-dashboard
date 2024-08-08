@@ -49,27 +49,27 @@ import CheckedSwitch from "./../helpers/CheckedSwitch.vue";
 import UnCheckedSwitch from "./../helpers/UnCheckedSwitch.vue";
 const conversations = ref([
   {
-    photo: "./src/imgs/person01.jpg",
+    photo: "https://i.ibb.co/2hDFT9m/person01.jpg",
     name: "Aser Mustafa",
     message: "Hi! I need more information..",
   },
   {
-    photo: "./src/imgs/person02.jpg",
+    photo: "https://i.ibb.co/94fVJ5L/person02.jpg",
     name: "Walid Ahmed",
     message: "Awesome work, can you..",
   },
   {
-    photo: "./src/imgs/person03.jpg",
+    photo: "https://i.ibb.co/PN0TWLh/person03.jpg",
     name: "Mohamed Samy",
     message: "About files I can..",
   },
   {
-    photo: "./src/imgs/person04.jpg",
+    photo: "https://i.ibb.co/qj0NmFR/person04.jpg",
     name: "Islam Ragab",
     message: "Have a great afternoon..",
   },
   {
-    photo: "./src/imgs/person05.jpg",
+    photo: "https://i.ibb.co/W5BM2SQ/person05.jpg",
     name: "Nader Ahmed",
     message: "Hi! I need more information..",
   },
