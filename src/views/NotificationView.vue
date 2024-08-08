@@ -181,6 +181,7 @@ function closePopup() {
     }
     .notification-btns {
       display: flex;
+      flex-wrap: wrap;
       gap: 20px;
       button {
         flex: 1;

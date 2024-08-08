@@ -96,7 +96,7 @@ function active(e) {
     padding: 20px;
     border-radius: 20px;
     @media (max-width: 1432px) {
-      position: absolute;
+      position: fixed;
       z-index: 2;
     }
     @media (max-width: 767px) {
@@ -151,7 +151,7 @@ function active(e) {
     padding-bottom: 20px;
     color: var(--gray-color);
     // Hide Till Finish
-    display: none;
+    // display: none;
     span {
       font-weight: bold;
     }

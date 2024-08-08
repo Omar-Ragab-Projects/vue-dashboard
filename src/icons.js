@@ -39,6 +39,10 @@ const icons = {
   faArrowDown: solidIcon.faArrowDown,
   faExclamation: solidIcon.faExclamation,
   faCircleExclamation: solidIcon.faCircleExclamation,
+  faCube: solidIcon.faCube,
+  faInbox: solidIcon.faInbox,
+  faScrewdriverWrench: solidIcon.faScrewdriverWrench,
+  faUserPen: solidIcon.faUserPen,
 };
 
 library.add(icons);

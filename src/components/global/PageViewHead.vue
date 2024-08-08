@@ -1,5 +1,5 @@
 <template>
-  <div class="head">
+  <div class="head" :class="$route.name == 'Profile' ? 'profile-page' : ''">
     <div class="page-title">
       <div class="path">
         <RouterLink to="/">Pages</RouterLink> / {{ $route.name }}
@@ -134,6 +134,25 @@ function notifications() {
         position: relative;
       }
     }
+  }
+}
+.head.profile-page {
+  margin-top: 10px;
+  margin-left: 10px;
+  .page-title {
+    a {
+      color: #ffffff;
+    }
+    .path {
+      color: #ffffff;
+      opacity: 0.7;
+    }
+    .title {
+      color: #e9e9e9;
+    }
+  }
+  .setting .icons svg {
+    color: #e9e9e9;
   }
 }
 </style>
