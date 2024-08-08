@@ -1,0 +1,1 @@
+import{o as t,c as s,a as e,t as o}from"./index-F1qznzF2.js";const a={class:"form-check form-switch"},r=e("input",{class:"form-check-input",type:"checkbox",role:"switch",checked:""},null,-1),l={class:"form-check-label"},_={__name:"CheckedSwitch",props:["text"],setup(c){return(n,h)=>(t(),s("div",a,[r,e("label",l,o(c.text),1)]))}};export{_};
