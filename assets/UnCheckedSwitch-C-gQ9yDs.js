@@ -1,0 +1,1 @@
+import{o as c,c as s,a as e,t as o}from"./index-_OTB50UQ.js";const a={class:"form-check form-switch"},r=e("input",{class:"form-check-input",type:"checkbox",role:"switch"},null,-1),n={class:"form-check-label"},h={__name:"UnCheckedSwitch",props:["text"],setup(t){return(l,i)=>(c(),s("div",a,[r,e("label",n,o(t.text),1)]))}};export{h as _};
