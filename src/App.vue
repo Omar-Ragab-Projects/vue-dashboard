@@ -57,7 +57,7 @@
       <RouterView />
 
       <div class="footer">
-        &copy; 2024, made with ❤ by <span>Omar Ragab</span>
+        &copy; 2024–{{ currentYear }}, made with ❤ by <span>Omar Ragab</span>
       </div>
     </div>
   </div>
@@ -71,6 +71,8 @@ import { ref } from "vue";
 const direction = ref("ltr");
 const language = ref("en");
 const currentLanguage = ref("Arabic");
+const currentYear = new Date().getFullYear();
+  
 function rtlFun() {
   direction.value == "ltr"
     ? (direction.value = "rtl")
